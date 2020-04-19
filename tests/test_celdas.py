@@ -7,7 +7,7 @@ def contar_celdas_ocupadas():
         for celda in fila:
             contador = contador + celda
 
-    assert contador == 15
+    return contador == 15
 
 def test_no_menor_de_15():
     assert contar_celdas_ocupadas() >= 15
