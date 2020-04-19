@@ -10,10 +10,10 @@ def contar_celdas_ocupadas():
     assert contador == 15
 
 def test_no_menor_de_15():
-    assert contar_celdas_ocupadas() => 15
+    assert contar_celdas_ocupadas() >= 15
 
 def test_no_mayor_de_15():
-    assert contar_celdas_ocupadas() =< 15
+    assert contar_celdas_ocupadas() <= 15
 
 def test_columnas_ocupadas():
     mi_carton = carton()
