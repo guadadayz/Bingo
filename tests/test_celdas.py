@@ -22,3 +22,13 @@ def test_columnas_ocupadas():
         if not(mi_carton[0][i] or mi_carton[1][i] or mi_carton[2][i]):
             assert False
     assert True
+
+def test_sin_filas_vacias():
+    mi_carton = carton()
+    for fila in mi_carton:
+        sum = 0
+        for celda in fila:
+            sum += celda
+        if sum == 0:
+            assert False
+    assert True            
